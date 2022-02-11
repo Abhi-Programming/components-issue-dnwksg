@@ -1,0 +1,17 @@
+
+<div style="width: 200px">
+<mat-calendar [selected]="this.sampleRange"
+[comparisonStart]="this.sampleRange.start"
+[comparisonStart]="this.sampleRange.end"
+(selectedChange)="this.onChange($event)"></mat-calendar>
+</div>
+<div>
+  <button mat-raised-button (click)="refreshDR()">Refresh DateRange</button>
+</div>
+
+<!--
+Copyright Google LLC All Rights Reserved.
+
+Use of this source code is governed by an MIT-style license that can be
+found in the LICENSE file at https://angular.io/license
+-->
